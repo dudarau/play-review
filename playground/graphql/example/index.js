@@ -11,6 +11,7 @@ const schema = makeExecutableSchema({
       hello: String!,
       myDarling: String!,
       posts: String,
+      postsq(firstName: String): String
     },
     schema {
       query: Query
@@ -22,6 +23,9 @@ const schema = makeExecutableSchema({
       myDarling: () => 'My Darling',
       posts: (author) => {
         return author
+      },
+      postsq: (firstName) => {
+        return `id=${firstName}`;
       }
     },
   },
