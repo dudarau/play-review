@@ -7,14 +7,26 @@
 - [Authorization](https://graphql.org/learn/authorization/)
 - [Caching](https://graphql.org/learn/caching/)
 - [Playground](https://github.com/prisma/graphql-playground)
+- [Shopify Tutorial: Designing a GraphQL API](https://github.com/Shopify/graphql-design-tutorial/blob/master/TUTORIAL.md)
 
 ### Server
-- [Tutorial Build Server](https://blog.apollographql.com/tutorial-building-a-graphql-server-cddaa023c035)
+- [Basics-Network](https://www.prisma.io/blog/graphql-server-basics-the-network-layer-51d97d21861/)
+- [Basics-Schemas, TypeDefs & Resolvers](https://www.prisma.io/blog/graphql-server-basics-the-schema-ac5e2950214e/)
+- [Basics-Demystifying the `info` Argument in Resolvers](https://www.prisma.io/blog/graphql-server-basics-demystifying-the-info-argument-in-graphql-resolvers-6f26249f613a/)
+- [Tutorial Build Server](https://blog.apollographql.com/tutorial-building-a-graphql-server-cddaa023c035) [Apollo](https://www.apollographql.com/docs/apollo-server/getting-started.html)
+- [For other languages](https://www.howtographql.com/choose/)
+- [Schema Explorer](https://github.com/apollographql/engine-docs/blob/master/source/features/schema-explorer.md) tool for schema management
 
 ### clients
-There are two major GraphQL clients available at the moment. The first one is [Apollo Client](https://github.com/apollographql/apollo-client), which is a community-driven effort to build a powerful and flexible GraphQL client for all major development platforms. The second one is called [Relay](https://facebook.github.io/relay/) and it is Facebook’s homegrown GraphQL client that heavily optimizes for performance and is only available on the web.
+There are two major GraphQL clients available at the moment. The first one is [Apollo Client](https://github.com/apollographql/apollo-client), which is a community-driven effort to build a powerful and flexible GraphQL client for all major development platforms. The second one is called [Relay](https://facebook.github.io/relay/) and it is Facebook’s homegrown GraphQL client that heavily optimizes for performance and is only available on the web. 
 
-- [For React/Redux](https://blog.apollographql.com/apollo-client-graphql-with-react-and-redux-49b35d0f2641) - strange but interesting approach 
+- [React + Apollo Tutorial](https://www.howtographql.com/react-apollo/0-introduction/)
+- [For React/Redux](https://blog.apollographql.com/apollo-client-graphql-with-react-and-redux-49b35d0f2641) - strange but interesting approach
+- [Unit-tests for React+Apollo](https://www.apollographql.com/docs/guides/testing-react-components.html)
+
+[Relay](https://facebook.github.io/relay/) is pretty complex framework if we compare to Apollo.
+
+[Relay Examples](https://github.com/relayjs/relay-examples) 
 
 ### utilities
 - [dataloader](https://github.com/facebook/dataloader) DataLoader is a generic utility to be used as part of your application's data fetching layer to provide a consistent API over various backends and reduce requests to those backends via batching and caching.
@@ -22,6 +34,11 @@ There are two major GraphQL clients available at the moment. The first one is [A
 
 ### hosting
 [Self-hosted service that provides GraphQl](https://www.graph.cool/)
+[with AWS](https://read.acloud.guru/8-steps-to-building-your-own-serverless-graphql-api-using-aws-amplify-42c21770424d)
+
+### Real GraphQl APIs
+
+[Github](https://developer.github.com/v4/guides/)
 
 ### Pros / Cons
 
