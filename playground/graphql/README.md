@@ -40,6 +40,10 @@ There are two major GraphQL clients available at the moment. The first one is [A
 
 [Github](https://developer.github.com/v4/guides/)
 
+### Real GraphQl use-cases
+
+[New York Times](https://open.nytimes.com/the-new-york-times-now-on-apollo-b9a78a5038c)
+
 ### Pros / Cons
 
 - [Advantages/Disadvantages](https://www.robinwieruch.de/why-graphql-advantages-disadvantages-alternatives/)
