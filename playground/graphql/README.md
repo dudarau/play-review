@@ -25,8 +25,9 @@ There are two major GraphQL clients available at the moment. The first one is [A
 - [Unit-tests for React+Apollo](https://www.apollographql.com/docs/guides/testing-react-components.html)
 
 [Relay](https://facebook.github.io/relay/) is pretty complex framework if we compare to Apollo.
-
+[Relay Modern](https://www.youtube.com/watch?v=5WjXX9-Vu-o)
 [Relay Examples](https://github.com/relayjs/relay-examples) 
+
 
 ### utilities
 - [dataloader](https://github.com/facebook/dataloader) DataLoader is a generic utility to be used as part of your application's data fetching layer to provide a consistent API over various backends and reduce requests to those backends via batching and caching.

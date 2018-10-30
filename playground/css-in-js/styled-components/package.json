@@ -1,0 +1,33 @@
+{
+  "name": "styled-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "startServer.js",
+  "scripts": {
+    "dev": "cross-env BABEL_ENV=cjs babel-node startServer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.17.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-macros": "^2.4.2",
+    "babel-plugin-preval": "^3.0.1",
+    "babel-plugin-tester": "^5.5.1",
+    "babel-plugin-transform-class-properties": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.22.0",
+    "babel-plugin-transform-react-remove-prop-types": "0.4.14",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.22.0",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "node-watch": "^0.5.8",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "styled-components": "^4.0.2"
+  }
+}
