@@ -56,6 +56,60 @@ render(
 
 ## JSS
 
+[documentation](http://cssinjs.org)
+[JSS Github](https://github.com/cssinjs/jss)
+[React-JSS Github](https://github.com/cssinjs/react-jss) - looks natural with React
+[Playground](https://codesandbox.io/s/z21lpmvv33)
+[Material UI consumes JSS](https://material-ui.com/)
+
+#### Example 
+
+```jsx harmony
+import jss from 'jss'
+import preset from 'jss-preset-default'
+import color from 'color'
+
+// One time setup with default plugins and settings.
+jss.setup(preset())
+
+const styles = {
+  button: {
+    fontSize: 12,
+    '&:hover': {
+      background: 'blue'
+    }
+  },
+  ctaButton: {
+    extend: 'button',
+    '&:hover': {
+      background: color('blue')
+        .darken(0.3)
+        .hex()
+    }
+  },
+  '@media (min-width: 1024px)': {
+    button: {
+      width: 200
+    }
+  }
+}
+
+const {classes} = jss.createStyleSheet(styles).attach()
+
+document.body.innerHTML = `
+  <button class="${classes.button}">Button</button>
+  <button class="${classes.ctaButton}">CTA Button</button>`
+```
+
+#### Pros
+
+- has a lot of plugins and supports different approaches for css-in-js
+- used by material-ui
+- more flexible
+
+#### Cons
+
+
 ## Aphrodite
 
 [Github](https://github.com/Khan/aphrodite)
