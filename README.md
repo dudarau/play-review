@@ -15,3 +15,12 @@
 ### tests
 
 - [e2e](playground/e2e/README.md)
+
+
+### React
+
+- [more](playground/React/README.md)
+
+### Redux
+
+- [more](playground/redux/README.md)
