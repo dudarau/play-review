@@ -141,31 +141,119 @@ Otherwise: Choosing some niche vendor might get you blocked once you need some a
 
 1 . Embrace linter security rules
 
+- [eslint-plugin-security](https://github.com/nodesecurity/eslint-plugin-security) and [tslint-config-security](https://www.npmjs.com/package/tslint-config-security
+
 2 . Limit concurrent requests using a middleware
+
+example [code of express rate limit](https://github.com/nfriedly/express-rate-limit/blob/master/lib/express-rate-limit.js)
+```js
+var RateLimit = require('express-rate-limit');
+// important if behind a proxy to ensure client IP is passed to req.ip
+app.enable('trust proxy'); 
+ 
+var apiLimiter = new RateLimit({
+  windowMs: 15*60*1000, // 15 minutes
+  max: 100,
+});
+ 
+// only apply to requests that begin with /user/
+app.use('/user/', apiLimiter);
+```
 
 3 . Extract secrets from config files or use packages to encrypt them
 
 4 . Prevent query injection vulnerabilities with ORM/ODM libraries
 
+- [examples of ORM, links on prevention explanation](https://github.com/i0natan/nodebestpractices/blob/master/sections/security/ormodmusage.md)
+- [SQL_Injection_Prevention_Cheat_Sheet](https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet)
+
 5 . Collection of generic security best practices
+
+[link](https://github.com/i0natan/nodebestpractices/blob/master/sections/security/commonsecuritybestpractices.md)
 
 6 . Adjust the HTTP response headers for enhanced security
 
+- X-XSS-Protection, X-Frame-Options and so on
+[link](https://github.com/i0natan/nodebestpractices/blob/master/sections/security/secureheaders.md)
+
 7 . Constantly and automatically inspect for vulnerable dependencies
 
-8 . Avoid using the Node.js Crypto library for passwords, use Bcrypt ??
+- [NPM audit](#npm-audit)
+- [Snyk](#snyk)
+- [Greenkeeper](#greenkeeper)
+
+
+8 . Avoid using the Node.js Crypto library for passwords, use Bcrypt
+
+[explanation](https://github.com/i0natan/nodebestpractices/blob/master/sections/security/bcryptpasswords.md)
 
 9 . Escape HTML, JS and CSS output
 
+```javascript
+<script>...NEVER PUT UNTRUSTED DATA HERE...</script>   directly in a script
+ 
+ <!--...NEVER PUT UNTRUSTED DATA HERE...-->             inside an HTML comment
+ 
+ <div ...NEVER PUT UNTRUSTED DATA HERE...=test />       in an attribute name
+ 
+ <NEVER PUT UNTRUSTED DATA HERE... href="/test" />   in a tag name
+ 
+ <style>...NEVER PUT UNTRUSTED DATA HERE...</style>   directly in CSS
+
+```
+
 10 . Validate incoming JSON schemas
 
+- [jsonschema](https://www.npmjs.com/package/jsonschema)
+
+``` javascript
+const JSONValidator = require("jsonschema").Validator;
+
+class Product {
+  
+  validate() {
+    var v = new JSONValidator();
+
+    return v.validate(this, schema);
+  }
+
+  static get schema() {
+    //define JSON-Schema, see example above
+  }
+}
+
+```
+
 11 . Support blacklisting JWTs
+
+```js
+var jwt = require('express-jwt');
+var blacklist = require('express-jwt-blacklist');
+ 
+app.use(jwt({
+  secret: 'my-secret',
+  isRevoked: blacklist.isRevoked
+}));
+ 
+app.get('/logout', function (req, res) {
+  blacklist.revoke(req.user)
+  res.sendStatus(200);
+});
+```
 
 12 . Limit the allowed login requests of each user
 
 13 . Run Node.js as non-root user
 
+- According to the 'Principle of least privilege' a user/process must be able to access only the necessary information and resources.
+
 14 . Limit payload size using a reverse-proxy or a middleware
+
+```js
+app.use(express.json({ limit: '300kb' }));
+```
+
+- [ngynx body limit](http://nginx.org/en/docs/http/ngx_http_core_module.html#client_max_body_size)
 
 15 . Avoid JavaScript eval statements 
 
@@ -208,4 +296,28 @@ Three main options can help in achieving this isolation:
 23 . Avoid DOS attacks by explicitly setting when a process should crash
 
 24 . Prevent unsafe redirects
+
+```js
+const whitelist = { 
+  'https://google.com': 1 
+};
+
+function getValidRedirect(url) { 
+    // check if the url starts with a single slash 
+  if (url.match(/^\/(?!\/)/)) { 
+    // Prepend our domain to make sure 
+    return 'https://example.com' + url; 
+  } 
+    // Otherwise check against a whitelist
+  return whitelist[url] ? url : '/'; 
+}
+
+app.get('/login', (req, res, next) => {
+
+  if (req.session.isAuthenticated()) {
+    res.redirect(getValidRedirect(req.query.url));
+  }
+
+});  
+```
 
