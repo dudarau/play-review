@@ -121,7 +121,11 @@ Otherwise: Choosing some niche vendor might get you blocked once you need some a
 
 8 . Discover errors and downtime using APM products
 
-9 . Make your code production-ready - plan it from the beginning [meet.js summit slides for production readiness](https://naugtur.pl/pres3/node2prod/#/)
+9 . Make your code production-ready - 
+- plan it from the beginning [meet.js summit slides for production readiness](https://naugtur.pl/pres3/node2prod/#/)
+- [video](https://youtu.be/lUsNne-_VIk)
+- [blocked](https://github.com/tj/node-blocked)
+- [heapdump](https://github.com/bnoordhuis/node-heapdump)
 
 10 . Measure and guard the memory usage: `node-inspector` and `memwatch`
 
