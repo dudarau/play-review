@@ -4,6 +4,14 @@
 
 - [Best Practice](./playground/node-js/BEST-PRACTICE-README.md)
 
+### Chrome
+
+- [Extensions](./playground/Chrome%20extensions/README.md)
+
+### Code styles
+
+- [Code styles](./playground/js-code-styles/README.md)
+
 ### CSS in JS
 
 - [libraries](playground/css-in-js/README.md)
@@ -29,7 +37,7 @@
 
 - [more](playground/React/README.md)
 
-### Redux
+### Redux and state management
 
 - [more](playground/redux/README.md)
 
