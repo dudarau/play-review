@@ -5,9 +5,13 @@
 [Style Guide 2](https://gist.github.com/datchley/4e0d05c526d532d1b05bf9b48b174faf)
 
 
-#### 
+#### libraries
 
-[Redux-debounced](https://github.com/ryanseddon/redux-debounced)
+- [Redux-debounced](https://github.com/ryanseddon/redux-debounced)
+- [Redux-first-router](https://github.com/faceyspacey/redux-first-router)
+##### Motivation
+- To be able to use Redux as is while keeping the address bar in sync. To define paths as actions, and handle path params and query strings as action payloads.
+- The address bar and Redux actions should be bi-directionally mapped, including via the browser's back/forward buttons. Dispatch an action and the address bar updates. Change the address, and an action is dispatched.
 
 ### extras
 
