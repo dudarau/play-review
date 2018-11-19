@@ -20,13 +20,14 @@
 
 - [flow/sequence diagrams](playground/flowchart.js/README.md)
 
+### js-core 
+
+- [APIs](./playground/js-core/README.md)
+
 ### Graph QL
 
 - [graphl docs](playground/graphql/README.md)
 
-### tests
-
-- [e2e](playground/e2e/README.md)
 
 ### Performance 
 
@@ -40,6 +41,10 @@
 ### Redux and state management
 
 - [more](playground/redux/README.md)
+
+### tests
+
+- [e2e](playground/e2e/README.md)
 
 ### Toast-UI
 
