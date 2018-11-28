@@ -11,6 +11,7 @@
 ### music
 - [Music in Browser - Tone.js](https://github.com/Tonejs/Tone.js) - [Demos](https://tonejs.github.io/demos), [API](https://tonejs.github.io/docs/), [Examples](https://tonejs.github.io/examples/)
 - [`learn music` based on Tone.js](https://learningmusic.ableton.com/index.html)
+- [Howler - music in browser](https://github.com/goldfire/howler.js)
 
 
 ### transformer-plugins
