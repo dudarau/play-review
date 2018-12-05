@@ -9,3 +9,9 @@
 ### tools 
 
 - [Storybook](https://storybook.js.org)
+
+### hooks
+
+- [awesome-hooks](https://github.com/rehooks/awesome-react-hooks)
+- [playground](https://code.sololearn.com/WFouLPd2Qdyp/#js)
+- [Abramov about React Hooks](https://medium.com/@dan_abramov/making-sense-of-react-hooks-fdbde8803889)
