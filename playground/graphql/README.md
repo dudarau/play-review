@@ -46,10 +46,15 @@ There are two major GraphQL clients available at the moment. The first one is [A
 
 [New York Times](https://open.nytimes.com/the-new-york-times-now-on-apollo-b9a78a5038c)
 
+### Partial Graph-QL
+
+[Apollo Link Rest](https://github.com/apollographql/apollo-link-rest) 
+
 ### Pros / Cons
 
 - [Advantages/Disadvantages](https://www.robinwieruch.de/why-graphql-advantages-disadvantages-alternatives/)
 - [Good and Bad Reasons](https://honest.engineering/posts/why-use-graphql-good-and-bad-reasons)
+- [When to use and when not](https://www.youtube.com/watch?v=YSEUAi1dAdk) - video(27 min)
 
 #### Pros
 
