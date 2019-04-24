@@ -4,6 +4,8 @@
 
 - [The path to becoming a software architect](https://medium.com/@nvashanin/the-path-to-becoming-a-software-architect-de53f1cb310a)- interesting but too broad, presents architects as mega-hero
 
+- [10 Common Software Architectural Patterns in a nutshell](https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013)
+
 #### [Types of architects](https://medium.com/@nvashanin/types-of-software-architects-aa03e359d192)
 
 ● System architect.

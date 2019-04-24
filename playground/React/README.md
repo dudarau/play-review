@@ -15,3 +15,12 @@
 - [awesome-hooks](https://github.com/rehooks/awesome-react-hooks)
 - [playground](https://code.sololearn.com/WFouLPd2Qdyp/#js)
 - [Abramov about React Hooks](https://medium.com/@dan_abramov/making-sense-of-react-hooks-fdbde8803889)
+
+### validation
+
+- [indicative](https://indicative.adonisjs.com/)
+- [explanation of indicative](https://blog.usejournal.com/easiest-user-validation-on-authentication-with-indicative-on-reactjs-432e6a8b790c)
+
+### Boilerplates
+
+[React-Boilerplate - Express, React, Redux-Saga, StyledComponents, i18n](https://github.com/react-boilerplate/react-boilerplate)

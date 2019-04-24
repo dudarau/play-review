@@ -15,6 +15,7 @@ All libraries support SSR.
 [For React-native](https://github.com/styled-components/css-to-react-native)
 
 [Example](styled-components/index.html)
+[Boilerplate Example with structuring code](https://github.com/react-boilerplate/react-boilerplate)
 
 #### Pros
 
@@ -23,7 +24,11 @@ All libraries support SSR.
 - support Flow and Typescript
 - support for Atom, Visual Studio Code, WebStorm, and soon Sublime Text
 
-#### Cons
+#### Concerns
+
+- if we keep styledComponents in the same file as React component then it's difficult to distinguish between styled and external components
+- if we use React-Boilerplate approach and keep each styled component in separate file then we get a lot of small files in one components folder
+   
 
 ## Emotion
 
